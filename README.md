@@ -1,4 +1,4 @@
-# Laravel Socialite
+# Rummykhan Socialite
 
 ## Introduction
 
@@ -32,9 +32,9 @@ Also, add the `Socialite` facade to the `aliases` array in your `app` configurat
 
 You will also need to add credentials for the OAuth services your application utilizes. These credentials should be placed in your `config/services.php` configuration file, and should use the key `facebook`, `twitter`, `linkedin`, `google`, `github` or `bitbucket`, depending on the providers your application requires. For example:
 
-    'github' => [
-        'client_id' => 'your-github-app-id',
-        'client_secret' => 'your-github-app-secret',
+    'instagram' => [
+        'client_id' => 'your-instagram-app-id',
+        'client_secret' => 'your-instagram-app-secret',
         'redirect' => 'http://your-callback-url',
     ],
 
@@ -57,7 +57,7 @@ Next, you are ready to authenticate users! You will need two routes: one for red
          */
         public function redirectToProvider()
         {
-            return Socialite::driver('github')->redirect();
+            return Socialite::driver('instagram')->redirect();
         }
 
         /**
@@ -67,7 +67,7 @@ Next, you are ready to authenticate users! You will need two routes: one for red
          */
         public function handleProviderCallback()
         {
-            $user = Socialite::driver('github')->user();
+            $user = Socialite::driver('instagram')->user();
 
             // $user->token;
         }
@@ -75,13 +75,13 @@ Next, you are ready to authenticate users! You will need two routes: one for red
 
 The `redirect` method takes care of sending the user to the OAuth provider, while the `user` method will read the incoming request and retrieve the user's information from the provider. Before redirecting the user, you may also set "scopes" on the request using the `scope` method. This method will overwrite all existing scopes:
 
-    return Socialite::driver('github')
+    return Socialite::driver('instagram')
                 ->scopes(['scope1', 'scope2'])->redirect();
 
 Of course, you will need to define routes to your controller methods:
 
-    Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
-    Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
+    Route::get('auth/instagram', 'Auth\AuthController@redirectToProvider');
+    Route::get('auth/instagram/callback', 'Auth\AuthController@handleProviderCallback');
 
 A number of OAuth providers support optional parameters in the redirect request. To include any optional parameters in the request, call the `with` method with an associative array:
 
@@ -92,7 +92,7 @@ A number of OAuth providers support optional parameters in the redirect request.
 
 Once you have a user instance, you can grab a few more details about the user:
 
-    $user = Socialite::driver('github')->user();
+    $user = Socialite::driver('instagram')->user();
 
     // OAuth Two Providers
     $token = $user->token;
