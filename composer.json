@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RummyKhan\\Socialite\\": "src/"
+            "rummykhan\\socialite\\": "src/"
         }
     },
     "minimum-stability": "dev"

@@ -1,4 +1,4 @@
-# Rummykhan Socialite
+### rummykhan/socialite (Modified version of laravel/socialite to support instagram oauth)
 
 ## Introduction
 
@@ -14,7 +14,7 @@ In addition to typical, form based authentication, Laravel also provides a simpl
 
 To get started with Socialite, add to your `composer.json` file as a dependency:
 
-    composer require laravel/socialite
+    composer require rummykhan/socialite
 
 ### Configuration
 
@@ -23,12 +23,12 @@ After installing the Socialite library, register the `Laravel\Socialite\Socialit
     'providers' => [
         // Other service providers...
 
-        Laravel\Socialite\SocialiteServiceProvider::class,
+        rummykhan\socialite\SocialiteServiceProvider::class,
     ],
 
 Also, add the `Socialite` facade to the `aliases` array in your `app` configuration file:
 
-    'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+    'Socialite' => rummykhan\socialite\Facades\Socialite::class,
 
 You will also need to add credentials for the OAuth services your application utilizes. These credentials should be placed in your `config/services.php` configuration file, and should use the key `facebook`, `twitter`, `linkedin`, `google`, `github` or `bitbucket`, depending on the providers your application requires. For example:
 
