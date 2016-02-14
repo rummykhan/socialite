@@ -2,7 +2,7 @@
 
 namespace RummyKhan\Socialite\Two;
 
-use Laravel\Socialite\AbstractUser;
+use RummyKhan\Socialite\AbstractUser;
 
 class User extends AbstractUser
 {

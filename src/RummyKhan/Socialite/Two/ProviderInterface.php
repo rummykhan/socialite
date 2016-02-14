@@ -14,7 +14,7 @@ interface ProviderInterface
     /**
      * Get the User instance for the authenticated user.
      *
-     * @return \Laravel\Socialite\Two\User
+     * @return \RummyKhan\Socialite\Two\User
      */
     public function user();
 }

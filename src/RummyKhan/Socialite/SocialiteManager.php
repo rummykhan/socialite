@@ -4,8 +4,8 @@ namespace RummyKhan\Socialite;
 
 use InvalidArgumentException;
 use Illuminate\Support\Manager;
-use Laravel\Socialite\One\TwitterProvider;
-use Laravel\Socialite\One\BitbucketProvider;
+use RummyKhan\Socialite\One\TwitterProvider;
+use RummyKhan\Socialite\One\BitbucketProvider;
 use League\OAuth1\Client\Server\Twitter as TwitterServer;
 use League\OAuth1\Client\Server\Bitbucket as BitbucketServer;
 
@@ -25,56 +25,56 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \RummyKhan\Socialite\Two\AbstractProvider
      */
     protected function createGithubDriver()
     {
         $config = $this->app['config']['services.github'];
 
         return $this->buildProvider(
-            'Laravel\Socialite\Two\GithubProvider', $config
+            'RummyKhan\Socialite\Two\GithubProvider', $config
         );
     }
 
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \RummyKhan\Socialite\Two\AbstractProvider
      */
     protected function createFacebookDriver()
     {
         $config = $this->app['config']['services.facebook'];
 
         return $this->buildProvider(
-            'Laravel\Socialite\Two\FacebookProvider', $config
+            'RummyKhan\Socialite\Two\FacebookProvider', $config
         );
     }
 
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \RummyKhan\Socialite\Two\AbstractProvider
      */
     protected function createGoogleDriver()
     {
         $config = $this->app['config']['services.google'];
 
         return $this->buildProvider(
-            'Laravel\Socialite\Two\GoogleProvider', $config
+            'RummyKhan\Socialite\Two\GoogleProvider', $config
         );
     }
 
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \RummyKhan\Socialite\Two\AbstractProvider
      */
     protected function createLinkedinDriver()
     {
         $config = $this->app['config']['services.linkedin'];
 
         return $this->buildProvider(
-          'Laravel\Socialite\Two\LinkedInProvider', $config
+          'RummyKhan\Socialite\Two\LinkedInProvider', $config
         );
     }
 
@@ -83,7 +83,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
         $config = $this->app['config']['services.instagram'];
 
         return $this->buildProvider(
-          'Laravel\Socialite\Two\InstagramProvider', $config
+          'RummyKhan\Socialite\Two\InstagramProvider', $config
         );
     }
 
@@ -92,7 +92,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
      *
      * @param  string  $provider
      * @param  array  $config
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \RummyKhan\Socialite\Two\AbstractProvider
      */
     public function buildProvider($provider, $config)
     {
@@ -105,7 +105,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\One\AbstractProvider
+     * @return \RummyKhan\Socialite\One\AbstractProvider
      */
     protected function createTwitterDriver()
     {
@@ -119,7 +119,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\One\AbstractProvider
+     * @return \RummyKhan\Socialite\One\AbstractProvider
      */
     protected function createBitbucketDriver()
     {

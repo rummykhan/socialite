@@ -16,6 +16,6 @@ class Socialite extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Laravel\Socialite\Contracts\Factory';
+        return 'RummyKhan\Socialite\Contracts\Factory';
     }
 }
