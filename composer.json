@@ -1,7 +1,6 @@
 {
     "name": "rummykhan/socialite",
     "description": "Modified version of Tylor Otwell laravel/socialite to support Instagram oauth",
-    "type": "social authentication",
     "license": "MIT",
     "authors": [
         {
