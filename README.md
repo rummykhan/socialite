@@ -1,4 +1,4 @@
-# rummykhan/socialite (Modified version of laravel/socialite to support instagram oauth)
+### rummykhan/socialite (Modified version of laravel/socialite to support instagram oauth)
 
 ## Introduction
 
