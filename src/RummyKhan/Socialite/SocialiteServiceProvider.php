@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite;
+namespace RummyKhan\Socialite;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite\Two;
+namespace RummyKhan\Socialite\Two;
 
 class FacebookProvider extends AbstractProvider implements ProviderInterface
 {

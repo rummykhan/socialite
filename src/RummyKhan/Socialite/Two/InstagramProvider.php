@@ -1,5 +1,5 @@
 <?php
-namespace rummykhan\Socialite\Two;
+namespace RummyKhan\Socialite\Two;
 
 class InstagramProvider extends AbstractProvider implements ProviderInterface
 {

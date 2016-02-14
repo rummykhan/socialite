@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite\Contracts;
+namespace RummyKhan\Socialite\Contracts;
 
 interface User
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite\Facades;
+namespace RummyKhan\Socialite\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

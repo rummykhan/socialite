@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite;
+namespace RummyKhan\Socialite;
 
 use InvalidArgumentException;
 use Illuminate\Support\Manager;

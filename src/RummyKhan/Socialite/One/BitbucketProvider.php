@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite\One;
+namespace RummyKhan\Socialite\One;
 
 class BitbucketProvider extends AbstractProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace rummykhan\Socialite\One;
+namespace RummyKhan\Socialite\One;
 
 use Illuminate\Http\Request;
 use InvalidArgumentException;
