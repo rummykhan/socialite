@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Laravel\Socialite\Contracts\Provider as ProviderContract;
+use RummyKhan\Socialite\Contracts\Provider as ProviderContract;
 
 abstract class AbstractProvider implements ProviderContract
 {
