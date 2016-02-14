@@ -1,14 +1,13 @@
 ## Introduction
-
-Laravel Socialite provides an expressive, fluent interface to OAuth authentication with Facebook, Twitter, Google, LinkedIn, GitHub and Bitbucket. It handles almost all of the boilerplate social authentication code you are dreading writing.
+* Laravel Socialite provides an expressive, fluent interface to OAuth authentication with Facebook, Twitter, Google, LinkedIn, GitHub and Bitbucket. It handles almost all of the boilerplate social authentication code you are dreading writing.
 ---
 
-## Official DocumentationDocumentation for Socialite can be found on the [Laravel/Socialite](https://github.com/laravel/socialite#laravel-socialite)
+## Official Documentation
+* Documentation for Socialite can be found on the [Laravel/Socialite](https://github.com/laravel/socialite#laravel-socialite)
 ---
 
 ## License
-
-Laravel Socialite is open-sourced software licensed under the MIT license
+* Laravel Socialite is open-sourced software licensed under the MIT license
 ---
 
 ## Modification
