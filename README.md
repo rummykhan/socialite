@@ -14,7 +14,7 @@ In addition to typical, form based authentication, Laravel also provides a simpl
 
 To get started with Socialite, add to your `composer.json` file as a dependency:
 
-    composer require laravel/socialite
+    composer require rummykhan/socialite
 
 ### Configuration
 
